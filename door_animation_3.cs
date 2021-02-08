@@ -19,8 +19,8 @@ public class door_animation_3 : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider Collider){
-        if(Input.GetKey("k")){
+    void OnTriggerStay(Collider Collider){
+        if(Input.GetKeyDown("k")){
             if(door_animator.GetBool("Door_Open")){
                 door_animator.SetBool("Door_Open", false);
             }else{
