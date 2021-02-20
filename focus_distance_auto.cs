@@ -9,7 +9,7 @@ public class focus_distance_auto : MonoBehaviour
 
     PostProcessVolume post_v;
     DepthOfField dof;
-    GameObject cam;
+    public GameObject cam;
 
 
 
