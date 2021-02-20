@@ -9,13 +9,13 @@ public class focus_distance_auto : MonoBehaviour
 
     PostProcessVolume post_v;
     DepthOfField dof;
-
+    public GameObject cam;
 
 
     // Start is called before the first frame update
     void Start()
     {   
-        post_v = GetComponent<PostProcessVolume>();
+        post_v = cam.GetComponent<PostProcessVolume>();
         post_v.profile.TryGetSettings(out dof);
     }
 
