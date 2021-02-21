@@ -25,7 +25,7 @@ public class focus_distance_auto : MonoBehaviour
         RaycastHit intersection;
         
 
-        if(Physics.Raycast(/*origin*/transform.position,/*distance*/transform.TransformDirection(Vector3.forward) /*<<-- same with Vector3.forward*/, out intersection)){
+        if(Physics.Raycast(/*origin*/transform.position,/*distance*/transform.TransformDirection(Vector3.forward), out intersection)){
             //print(intersection.distance);
             dof.focusDistance.value = intersection.distance;
 
